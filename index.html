@@ -5,29 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join LitHub</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="img">
-            <img src="./images/bg-signup-form.jpg" alt="image of a library shelf with a ladder">
-            <div class="logo">
-                <img src="./images/open-book.png" alt="Lineart logo of an open book">
-                <h1>LitHub</h1>
-            </div>
-            <p class="credit bg">Photo by <a href="https://unsplash.com/@henry_be?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Henry Be</a> on <a href="https://unsplash.com/photos/library-shelf-near-black-wooden-ladder-lc7xcWebECc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
-            <p class="credit logo"><a href="https://www.freepik.com/icon/open-book_2702134#uuid=3a193fe9-6d41-451f-bd04-080a6e87e31f">Icon by Freepik</a></p>
+    <div id="container">
+        <!-- Left Section with Background Image -->
+        <div id="image">
+            <p class="credit">Photo by <a href="https://unsplash.com/@henry_be?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Henry Be</a> on <a href="https://unsplash.com">Unsplash</a></p>
         </div>
-        <div class="content">
-            <h2>Education is the greatest weapon one can weild. Sign up <em>now</em> to get started.</h2>
-            <form action="" method="get">
 
-            </form>
-            <div class="existing">
-                Already have an account? 
-                <a href="">Log in</a>
+        <!-- Right Section with Form -->
+        <div id="form-container">
+            <!-- Logo -->
+            <div id="logo">
+                <p>LitHub</p>
+            </div>
+            
+            <!-- Header Text -->
+            <div id="text">
+                <h1>Education is the most powerful tool one can yield. Join our online library <em>today</em>!</h1>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="form">
+                <form>
+                    <h2>Sign Up</h2>
+                    
+                    <!-- First Name -->
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+
+                    <!-- Last Name -->
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+
+                    <!-- Email -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <!-- Password -->
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" 
+                           required minlength="8" maxlength="20" 
+                           title="Password must be between 8 and 20 characters long.">
+
+                    <!-- Confirm Password -->
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" 
+                           required pattern=".{8,}" title="Passwords must match.">
+
+                    <!-- Submit Button -->
+                    <button type="submit">Create Account</button>
+                </form>
             </div>
         </div>
     </div>
